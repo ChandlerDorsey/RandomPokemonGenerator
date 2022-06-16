@@ -1,0 +1,231 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    min-height: 100%;
+    color: #404040;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+footer{
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+i{
+    color:black;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50%;
+}
+
+.main-header{
+    max-width:100%;
+    text-align:center;
+    background-color: black;
+
+}
+.img-center{
+    display:inline-block;
+    margin: 0 auto;
+}
+.img-left{
+    float:left;
+    width:20%;
+    height: auto;
+    max-width: 100%;
+}
+.img-right{
+    float: right;
+    width: 20%;
+    height: auto;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 620px) and (max-width: 899px), not all{
+    .header-logo {
+        background-image: url("images/title.png");
+        background-size: 807px 100px;
+    }
+}
+.header-logo {
+    display: block;
+    height: 200px;
+    text-indent: -9999px;
+    background-image:url("images/title.png");
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+@media (min-width: 620px){
+    header-logo {
+        background-image: url("images/title.png");
+}
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 619px), not all{
+
+
+.header-logo {
+    background-image: url("images/title.png");
+    background-size: 280px 100px;
+}
+}
+
+
+.centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.generateButton {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 100px;
+    color: black;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}  
+.generateButton:hover {
+    color: #fff;
+  background-color: #1A1A1A;
+}
+
+.card {
+    display: block;  
+    padding: 0;      
+    margin: 0;       
+    width: 100%;    
+}
+
+.card-name {
+    margin-bottom: 0px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.card-image {
+    height: 200px;
+    margin: 0 auto;
+
+}
+
+.card-type{
+    text-transform: capitalize;
+    margin:0 auto;
+    text-align: center;
+    font-family: "Fira Sans","Trebuchet MS",Ubuntu,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+.pokemon-type[class*="normal"] {
+    background-color: #aa9;
+    color: white;
+}
+
+.pokemon-type[class*="fire"] {
+    background-color: #f42;
+    color: white;
+}
+
+.pokemon-type[class*="grass"] {
+    background-color: #7c5;
+    color: white;
+}
+
+.pokemon-type[class*="water"] {
+    background-color: #39f;
+    color: white;
+}
+
+.pokemon-type[class*="ice"] {
+    background-color: #6cf;
+    color: white;
+}
+
+.pokemon-type[class*="electric"] {
+    background-color: #fc3;
+    color: white;
+}
+
+.pokemon-type[class*="fighting"]{
+    background-color: #b54;
+    color: white;
+}
+
+.pokemon-type[class*="flying"] {
+    background-color: #89f;
+    color: white;
+}
+
+.pokemon-type[class*="bug"]{
+    background-color: #ab2;
+    color: white;
+}
+
+.pokemon-type[class*="ghost"]{
+    background-color: #66b;
+    color: white;
+}
+
+.pokemon-type[class*="rock"]{
+    background-color: #ba6;
+    color: white;
+}
+
+.pokemon-type[class*="ground"]{
+    background-color: #db5;
+    color: white;
+}
+
+.pokemon-type[class*="steel"]{
+    background-color: #aab;
+    color: white;
+}
+
+.pokemon-type[class*="dark"]{
+    background-color: #754;
+    color: white;
+}
+
+.pokemon-type[class*="psychic"]{
+    background-color: #f59;
+    color: white;
+}
+
+.pokemon-type[class*="fairy"]{
+    background-color: #e9e;
+    color: white;
+}
+
+.pokemon-type[class*="dragon"]{
+    background-color: #76e;
+    color: white;
+}
+
+.pokemon-type[class*="poison"]{
+    background-color: #a59;
+    color: white;
+}
+
+
+
+
