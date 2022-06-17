@@ -14,15 +14,21 @@ html {
     -ms-text-size-adjust: none;
     text-size-adjust: none
 }
+
 body{
     margin: 0px;
     padding: 0px;
     text-align: center;
+    background: url("images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;   
+    width:100%;
 }
 
 footer{
     margin-bottom: 0;
-    margin-top: 25px;
 }
 
 i{
@@ -32,33 +38,24 @@ i{
     margin-left: 50%;
 }
 
+i:hover{
+    color: white;
+}
+
 .main-header{
     max-width:100%;
     text-align:center;
     background-color: black;
+    height: 200px;
+}
 
-}
-.img-center{
-    display:inline-block;
-    margin: 0 auto;
-}
-.img-left{
-    float:left;
-    width:20%;
-    height: auto;
-    max-width: 100%;
-}
-.img-right{
-    float: right;
-    width: 20%;
-    height: auto;
-}
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 620px) and (max-width: 899px), not all{
     .header-logo {
         background-image: url("images/title.png");
         background-size: 807px 100px;
     }
 }
+
 .header-logo {
     display: block;
     height: 200px;
@@ -67,26 +64,26 @@ i{
     background-position: center 0;
     background-repeat: no-repeat;
 }
+
 @media (min-width: 620px){
     header-logo {
         background-image: url("images/title.png");
 }
 }
+
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 619px), not all{
-
-
-.header-logo {
-    background-image: url("images/title.png");
-    background-size: 280px 100px;
+    .header-logo {
+        background-image: url("images/title.png");
+        background-size: 280px 100px;
 }
 }
-
 
 .centered {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
 .generateButton {
     background-color: white;
     border: 3px solid black;
@@ -99,19 +96,22 @@ i{
     text-align: center;
     width: 700px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 25px;
     margin-bottom: 25px;
-}  
+}
+  
 .generateButton:hover {
     color: #fff;
   background-color: #1A1A1A;
 }
 
 .card {
-    display: block;  
-    padding: 0;      
-    margin: 0;       
-    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .card-name {
@@ -122,10 +122,10 @@ i{
     font-weight: bold;
     text-align: center;
 }
+
 .card-image {
     height: 200px;
     margin: 0 auto;
-
 }
 
 .card-type{
@@ -225,7 +225,4 @@ i{
     background-color: #a59;
     color: white;
 }
-
-
-
 
