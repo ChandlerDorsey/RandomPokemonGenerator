@@ -12,6 +12,7 @@ Promise.all(array).then((results) => {
      const pokemon = results.map((data) => ({
         name: data.name,
         image: data.sprites['front_default'],
+        shinyImage: data.sprites['front_shiny'],
         type: data.types.map((type) => type.type.name).join(', '),
         typeCss: data.types.map((type)=>type.type.name).join('--'),
         id: data.id,
@@ -22,6 +23,7 @@ Promise.all(array).then((results) => {
     displayPokemon(pokemon);
   });
  };
+ 
 const displayPokemon = (pokemon) => {
 console.log(pokemon);
 const pokemonHTMLString = pokemon
@@ -29,8 +31,9 @@ const pokemonHTMLString = pokemon
         (pokemon) => `
     <ul class="card pokemon-type type-${pokemon.typeCss}">
         <img class="card-image" src="${pokemon.image}"/>
+        <img class="card-image" src="${pokemon.shinyImage}"/>
         <h2 class="card-name"> National No ${pokemon.id}. ${pokemon.name}</h2>
-        <p class="card-type">Type: ${pokemon.type}</p>        
+        <p class="card-type">Type: ${pokemon.type}</p>   
 
     </ul>
 `
@@ -41,3 +44,5 @@ document.querySelector('#pokemonGenerated').innerHTML = pokemonHTMLString;
 };
 
 fetchPokemon();
+
+  
