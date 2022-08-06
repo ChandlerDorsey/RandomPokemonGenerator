@@ -83,7 +83,15 @@ i:hover{
     margin: 0 auto;
     width: 100%;
 }
-
+.stats{
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+h4{
+    display: inline-block;
+    text-align: center;
+}
 .card-name {
     margin-bottom: 0px;
     font-size: 32px;
@@ -94,7 +102,7 @@ i:hover{
 }
 
 .card-image{
-    height: 170px;
+    height: 175px;
     margin: 0 auto;
 }
 
