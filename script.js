@@ -38,8 +38,8 @@ const pokemonHTMLString = pokemon
         <p class="card-type">Type: ${pokemon.type}</p>  
         <h3> Base Stats: </h3>
         <div class="stats">
-        <h4>${pokemon.stats_name}</h4>
-        <h4>${pokemon.stats}</h4>
+        <p class ="stat-names">${pokemon.stats_name}</p>
+        <p class="stat-points">${pokemon.stats}</p>
     </div>
          
 
